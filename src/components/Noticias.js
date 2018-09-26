@@ -5,7 +5,7 @@ class Noticias extends Component {
   state = {};
   render() {
     return (
-      <div>
+      <div className=''>
         {this.props.noticias.map(noticia => (
           <Noticia key={noticia.url} noticia={noticia} />
         ))}

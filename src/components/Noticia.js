@@ -1,25 +1,27 @@
 import React from "react";
 
 const Noticia = props => {
-  const { urlToImage, url, title, description, source } = props.noticia;
+  const { urlToImage, url, title, source } = props.noticia;
 
   return (
-    <div className="mb-4">
-      <div className="card">
+    <div className=" mw9 center ph3-ns ">
+    <a href={url} target="_blank" className=''>
+      <div className='hover-bg-light-green  shadow-4 fl w-100 w-30-ns near-black grow bg-white br1  ma1'>
         <div className="card-image">
-          <img src={urlToImage} alt={title} width="100%"/>
-          <span className="badge badge-warning ml-3 mt-2">{source.name}</span>
+          <img src={urlToImage} alt=''  width="100%" className='br1 dim ps0'/>
+          <span className="helvetica ma3 pa1 bg-near-black white f6  br1 ">{source.name}</span>
         </div>
-        <div className="card-body">
-          <h3>{title}</h3>
-          <p>{description}</p>
+        <div className='pa2 tl '>
+          <h3 className='sarif '>{title}</h3>
+          {/* <p className='tj helvetica'>{description}</p> */}
         </div>
-        <div className="card-footer">
-          <a href={url} target="_blank" className="btn btn-primary">
-            Ver Noticia
+        <div className="tr pa2 ">
+          <a href={url} target="_blank" className='link b black hover-near-white no-underline near-blue pa1'>
+           VER MAS
           </a>
         </div>
       </div>
+      </a>
     </div>
   );
 };

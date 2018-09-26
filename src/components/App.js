@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "bootstrap/dist/css/bootstrap.css";
 
 import Header from "./Header";
 import Noticias from "./Noticias";
@@ -29,10 +28,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className=''>
         <Header titulo="Noticias" />
         <div className="container">
-          <Formulario consultarNoticias={this.consultarNoticias} />
+          {/* <Formulario consultarNoticias={this.consultarNoticias} /> */}
           <Noticias noticias={this.state.noticias} />
         </div>
       </div>
