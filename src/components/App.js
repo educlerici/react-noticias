@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import Header from "./Header";
 import Noticias from "./Noticias";
-import Formulario from "./Formulario";
+// import Formulario from "./Formulario";
 
 class App extends Component {
   state = {
@@ -26,9 +26,10 @@ class App extends Component {
       });
   };
 
+
   render() {
     return (
-      <div className=''>
+      <div className=' '>
         <Header titulo="Noticias" />
         <div className="container">
           {/* <Formulario consultarNoticias={this.consultarNoticias} /> */}
